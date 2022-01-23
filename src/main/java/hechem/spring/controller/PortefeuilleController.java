@@ -5,43 +5,35 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import hechem.spring.entity.PrixAction;
-import hechem.spring.entity.PrixAction_utils;
-import hechem.spring.service.PrixActionService;
+import hechem.spring.entity.Portefeuille;
+import hechem.spring.service.PortefeuilleService;
 
 @CrossOrigin(origins = "http://localhost:8081")
 @RestController
-@RequestMapping("/prixaction")
-public class PrixActionController {
+@RequestMapping("/portefeuille")
+public class PortefeuilleController {
 
 	@Autowired
-	PrixActionService prixactionService;
+	PortefeuilleService portefeuilleService;
 	
 	@GetMapping("/getAll")
 	@ResponseBody
-	private List<PrixAction> getAllActions() {
+	private List<Portefeuille> getAllPortefeuilles() {
 		
-		return prixactionService.getAll();
+		return portefeuilleService.getAll();
 	}
 
 	@PostMapping("/add")
 	@ResponseBody
-	private PrixAction saveActions(@RequestBody PrixAction actions) {
-		prixactionService.save(actions);
-		return actions;
-	}
-
-	@GetMapping("/get/{actionid}")
-	@ResponseBody
-	private List<PrixAction_utils> getListPrixAction(@PathVariable("actionid") int actionId) {
-		return prixactionService.prixActions(actionId);
+	private Portefeuille saveActions(@RequestBody Portefeuille portefeuilles) {
+		portefeuilleService.save(portefeuilles);
+		return portefeuilles;
 	}
 
 

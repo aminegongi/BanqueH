@@ -62,3 +62,56 @@
 2022-01-23 00:21:37.570  INFO 10264 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-01-23 00:21:37.570  INFO 10264 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2022-01-23 00:21:37.570  INFO 10264 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-01-23 18:14:59.766  INFO 8180 --- [main] hechem.spring.BanqueProjetApplication    : Starting BanqueProjetApplication using Java 1.8.0_221 on DESKTOP-C8JGCUS with PID 8180 (D:\Spring\Work\banque_projet\target\classes started by Amine Gongi in D:\Spring\Work\banque_projet)
+2022-01-23 18:14:59.784  INFO 8180 --- [main] hechem.spring.BanqueProjetApplication    : No active profile set, falling back to default profiles: default
+2022-01-23 18:15:00.764  INFO 8180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-23 18:15:00.829  INFO 8180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 3 JPA repository interfaces.
+2022-01-23 18:15:01.614  INFO 8180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-01-23 18:15:01.649  INFO 8180 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-23 18:15:01.650  INFO 8180 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-23 18:15:01.820  INFO 8180 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-23 18:15:01.821  INFO 8180 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1962 ms
+2022-01-23 18:15:02.058  INFO 8180 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-23 18:15:02.104  INFO 8180 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-01-23 18:15:02.347  INFO 8180 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-23 18:15:02.464  INFO 8180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-01-23 18:15:02.728  INFO 8180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-01-23 18:15:02.748  INFO 8180 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-01-23 18:15:03.550  INFO 8180 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-23 18:15:03.561  INFO 8180 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-23 18:15:03.881  WARN 8180 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-23 18:15:04.192  INFO 8180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-01-23 18:15:04.203  INFO 8180 --- [main] hechem.spring.BanqueProjetApplication    : Started BanqueProjetApplication in 5.064 seconds (JVM running for 6.377)
+2022-01-23 18:21:56.800  INFO 8180 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-01-23 18:21:57.294  INFO 8180 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-23 18:21:57.297  INFO 8180 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-01-23 18:21:57.306  INFO 8180 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-01-23 18:26:37.972  INFO 5140 --- [main] hechem.spring.BanqueProjetApplication    : Starting BanqueProjetApplication using Java 1.8.0_221 on DESKTOP-C8JGCUS with PID 5140 (D:\Spring\Work\banque_projet\target\classes started by Amine Gongi in D:\Spring\Work\banque_projet)
+2022-01-23 18:26:37.974  INFO 5140 --- [main] hechem.spring.BanqueProjetApplication    : No active profile set, falling back to default profiles: default
+2022-01-23 18:26:38.617  INFO 5140 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-23 18:26:38.671  INFO 5140 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 3 JPA repository interfaces.
+2022-01-23 18:26:39.121  INFO 5140 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-01-23 18:26:39.129  INFO 5140 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-23 18:26:39.130  INFO 5140 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-23 18:26:39.252  INFO 5140 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-23 18:26:39.252  INFO 5140 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1228 ms
+2022-01-23 18:26:39.442  INFO 5140 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-23 18:26:39.484  INFO 5140 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-01-23 18:26:39.610  INFO 5140 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-23 18:26:39.720  INFO 5140 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-01-23 18:26:39.954  INFO 5140 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-01-23 18:26:39.957  INFO 5140 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-01-23 18:26:40.972  INFO 5140 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-23 18:26:40.991  INFO 5140 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-23 18:26:41.298  WARN 5140 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-23 18:26:41.593  INFO 5140 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-01-23 18:26:41.599  INFO 5140 --- [main] hechem.spring.BanqueProjetApplication    : Started BanqueProjetApplication in 4.001 seconds (JVM running for 5.071)
+2022-01-23 18:27:53.304  INFO 5140 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-23 18:27:53.306  INFO 5140 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-23 18:27:53.309  INFO 5140 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-01-23 18:27:53.719 TRACE 5140 --- [http-nio-8081-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [2]
+2022-01-23 18:27:53.727 TRACE 5140 --- [http-nio-8081-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1]
+2022-01-23 18:53:17.948  INFO 5140 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-01-23 18:53:18.360  INFO 5140 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-23 18:53:18.364  INFO 5140 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-01-23 18:53:18.376  INFO 5140 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
