@@ -5,8 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import hechem.spring.entity.Action;
 import hechem.spring.entity.Portefeuille;
-import hechem.spring.entity.PortefeuilleClient_utils;
 import hechem.spring.entity.PrixAction_utils;
 import hechem.spring.repository.PortefeuilleRepository;
 
@@ -34,14 +34,14 @@ public class PortefeuilleService {
 		portefeuilleRepository.deleteById(id);
 	}
 	
-	public void portfeuilleClients(int id_client) {
-		List<PortefeuilleClient_utils> portefeuilles = new ArrayList<PortefeuilleClient_utils>();
+	public List<Portefeuille> portfeuilleClient(int id_client) {
+		List<Portefeuille> portefeuilles = new ArrayList<Portefeuille>();
 		portefeuilleRepository.findAll().forEach(pc -> {
 			if(pc.getActionUser().getId_user() == id_client){
-				
+				portefeuilles.add(pc);
 			}
 		});
 		
-		
+		return portefeuilles;
 	}
 }
