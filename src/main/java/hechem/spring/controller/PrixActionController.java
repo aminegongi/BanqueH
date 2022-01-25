@@ -12,17 +12,21 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import hechem.spring.entity.Action;
 import hechem.spring.entity.PrixAction;
 import hechem.spring.entity.PrixAction_utils;
+import hechem.spring.service.ActionService;
 import hechem.spring.service.PrixActionService;
 
-@CrossOrigin(origins = "http://localhost:8081")
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/prixaction")
 public class PrixActionController {
 
 	@Autowired
 	PrixActionService prixactionService;
+	@Autowired
+	ActionService actService;
 	
 	@GetMapping("/getAll")
 	@ResponseBody
@@ -34,6 +38,15 @@ public class PrixActionController {
 	@PostMapping("/add")
 	@ResponseBody
 	private PrixAction saveActions(@RequestBody PrixAction actions) {
+		prixactionService.save(actions);
+		return actions;
+	}
+	
+	@PostMapping("/addPrix/{actionid}")
+	@ResponseBody
+	private PrixAction savePrixAction(@RequestBody PrixAction actions,@PathVariable("actionid") int actionId) {
+		Action act = actService.getById(actionId);
+		actions.setIdAction(act);
 		prixactionService.save(actions);
 		return actions;
 	}

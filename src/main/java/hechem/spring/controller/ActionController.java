@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import hechem.spring.entity.Action;
 import hechem.spring.service.ActionService;
 
-@CrossOrigin(origins = "http://localhost:8081")
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/action")
 public class ActionController {
@@ -45,13 +45,13 @@ public class ActionController {
 		return actionService.getById(actionId);
 	}
 
-	@DeleteMapping("/{actionid}")
+	@DeleteMapping("/delete/{actionid}")
 	@ResponseBody
 	private void deleteAction(@PathVariable("actionid") int actionId) {
 		actionService.delete(actionId);
 	}
 
-	@PutMapping("/")
+	@PutMapping("/edit")
 	@ResponseBody
 	private Action updateAction(@RequestBody Action action) {
 		actionService.update(action);

@@ -16,7 +16,7 @@ import hechem.spring.entity.Action;
 import hechem.spring.entity.Portefeuille;
 import hechem.spring.service.PortefeuilleService;
 
-@CrossOrigin(origins = "http://localhost:8081")
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/portefeuille")
 public class PortefeuilleController {
