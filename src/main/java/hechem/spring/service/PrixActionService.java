@@ -46,5 +46,9 @@ public class PrixActionService {
 		
 		return tabpact;
 	}
+	
+	public float lastPrixAction ( int id_action ){
+		return prixactionRepository.getLastPriceAction(id_action);
+	}
 
 }

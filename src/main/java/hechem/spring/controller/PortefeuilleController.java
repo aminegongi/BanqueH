@@ -43,6 +43,17 @@ public class PortefeuilleController {
 	private List<Portefeuille> getListPrixAction(@PathVariable("userid") int userid) {
 		return portefeuilleService.portfeuilleClient(userid);
 	}
-
-
+	
+	@GetMapping("/getAction/{userid}/{actionid}")
+	@ResponseBody
+	private List<Portefeuille> getListActionUser(@PathVariable("userid") int userid,@PathVariable("actionid") int actionid) {
+		return portefeuilleService.detailActionPortfeuilleClient(userid, actionid);
+	}
+	
+	@PostMapping("/optAction/{actionid}/{nombre}/{type}/{userid}")
+	@ResponseBody
+	private String optAction(@PathVariable("actionid") int actionId,@PathVariable("nombre") String nombre, @PathVariable("type") String type, @PathVariable("userid") int userid ){
+		return portefeuilleService.achatVenteAction(userid, actionId, nombre, type);
+	}
+	
 }

@@ -57,5 +57,12 @@ public class ActionController {
 		actionService.update(action);
 		return action;
 	}
+	
+	@PutMapping("/updateNombreAction/{actionid}/{nombre}/{type}")
+	@ResponseBody
+	private boolean updateNombreAction(@PathVariable("actionid") int actionId,@PathVariable("nombre") String nombre, @PathVariable("type") String type ) {
+		return actionService.updateNombreAction(actionId, nombre,type);
+	}
+	
 
 }

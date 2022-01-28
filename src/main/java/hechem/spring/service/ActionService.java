@@ -35,4 +35,32 @@ public class ActionService {
 	public void delete(int id) {
 		actionRepository.deleteById(id);
 	}
+	
+	public boolean checkNbAction(int id_action, String nombre){ // False Nombre insuffisant | True Nombre suffisant
+		if ( Integer.valueOf(getById(id_action).getNombreAction()) >= Integer.valueOf(nombre)){
+			return true;
+		}
+		return false;
+	}
+	
+	public boolean updateNombreAction(int id_action, String nombre, String type){ // False transaction impossible | True transaction OK
+		if(checkNbAction(id_action, nombre)){
+			Action act = getById(id_action);
+			int nn = 0;
+			if(type.toLowerCase() == "achat"){
+				nn = Integer.valueOf(act.getNombreAction()) - Integer.valueOf(nombre) ;
+			}
+			else if(type.toLowerCase() == "vente"){
+				nn = Integer.valueOf(act.getNombreAction()) + Integer.valueOf(nombre) ;
+			}
+			act.setNombreAction( Integer.toString(nn) );
+			update(act);
+			return true;
+		}
+		return false;
+	}
+	
+	
+	
+	
 }
