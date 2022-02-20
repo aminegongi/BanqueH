@@ -63,6 +63,5 @@ public class ActionController {
 	private boolean updateNombreAction(@PathVariable("actionid") int actionId,@PathVariable("nombre") String nombre, @PathVariable("type") String type ) {
 		return actionService.updateNombreAction(actionId, nombre,type);
 	}
-	
 
 }

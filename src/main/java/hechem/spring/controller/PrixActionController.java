@@ -56,6 +56,12 @@ public class PrixActionController {
 	private List<PrixAction_utils> getListPrixAction(@PathVariable("actionid") int actionId) {
 		return prixactionService.prixActions(actionId);
 	}
+	
+	@GetMapping("/getAct/{actionid}")
+	@ResponseBody
+	private float getPrixActAction(@PathVariable("actionid") int actionId) {
+		return prixactionService.lastPrixAction(actionId);
+	}
 
 
 }
