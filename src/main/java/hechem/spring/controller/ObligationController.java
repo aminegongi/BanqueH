@@ -58,10 +58,10 @@ public class ObligationController {
 		return obligation;
 	}
 	
-	@PutMapping("/updateNombreObligation/{obligationid}/{nombre}/{type}")
+	@PutMapping("/updateNombreObligation/{obligationid}/{nombre}")
 	@ResponseBody
-	private boolean updateNombreObligation(@PathVariable("obligationid") int obligationId,@PathVariable("nombre") String nombre, @PathVariable("type") String type ) {
-		return obligationService.updateNombreObligation(obligationId, nombre,type);
+	private boolean updateNombreObligation(@PathVariable("obligationid") int obligationId,@PathVariable("nombre") String nombre) {
+		return obligationService.updateNombreObligation(obligationId, nombre);
 	}
 
 }

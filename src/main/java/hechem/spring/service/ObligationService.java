@@ -45,7 +45,7 @@ public class ObligationService {
 		return false;
 	}
 	
-	public boolean updateNombreObligation(int id_obligation, String nombre, String type){ // False transaction impossible | True transaction OK
+	public boolean updateNombreObligation(int id_obligation, String nombre){ // False transaction impossible | True transaction OK
 		if(checkNbObligation(id_obligation, nombre)){
 			Obligation act = getById(id_obligation);
 			int nn = 0;

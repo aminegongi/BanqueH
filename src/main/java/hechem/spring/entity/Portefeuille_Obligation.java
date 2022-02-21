@@ -33,8 +33,8 @@ public class Portefeuille_Obligation {
 	@ManyToOne
 	User actionUser;
 	
-	@Column(name = "prixAction")
-	private float prixAction;
+	@Column(name = "prixObligation")
+	private float prixObligation;
 	
 	@Column(name = "nombreObligation")
 	private String nombreObligation;
@@ -79,20 +79,20 @@ public class Portefeuille_Obligation {
 	}
 
 
-	public float getPrixAction() {
-		return prixAction;
+	public float getPrixObligation() {
+		return prixObligation;
 	}
 
 
-	public void setPrixAction(float prixAction) {
-		this.prixAction = prixAction;
+	public void setPrixObligation(float prixAction) {
+		this.prixObligation = prixAction;
 	}
 
 
 	@Override
 	public String toString() {
 		return "Portefeuille_Obligation [id=" + id + ", obligation=" + obligation + ", actionUser=" + actionUser
-				+ ", prixAction=" + prixAction + ", nombreObligation=" + nombreObligation + ", dateMarche=" + dateMarche
+				+ ", prixObligation=" + prixObligation + ", nombreObligation=" + nombreObligation + ", dateMarche=" + dateMarche
 				+ "]";
 	}
 
@@ -128,7 +128,7 @@ public class Portefeuille_Obligation {
 		result = prime * result + id;
 		result = prime * result + ((nombreObligation == null) ? 0 : nombreObligation.hashCode());
 		result = prime * result + ((obligation == null) ? 0 : obligation.hashCode());
-		result = prime * result + Float.floatToIntBits(prixAction);
+		result = prime * result + Float.floatToIntBits(prixObligation);
 		return result;
 	}
 
@@ -164,7 +164,7 @@ public class Portefeuille_Obligation {
 				return false;
 		} else if (!obligation.equals(other.obligation))
 			return false;
-		if (Float.floatToIntBits(prixAction) != Float.floatToIntBits(other.prixAction))
+		if (Float.floatToIntBits(prixObligation) != Float.floatToIntBits(other.prixObligation))
 			return false;
 		return true;
 	}
